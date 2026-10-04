@@ -2,7 +2,7 @@
 
 English / USD ski-mask storefront, inspired by the product-first layout at https://slopepunk.com/products/slopepunk%E2%84%A2-ski-masks.
 
-This is a private pre-launch preview, not a connected commerce backend or a Shopify theme. It provides four design choices, a photo gallery with zoom, quantities, a device-local shopping bag, FAQ, and responsive layouts. It does not accept orders, charge payments, reserve stock, send messages, or fulfill products.
+This is a public pre-launch design demo, not a connected commerce backend or a Shopify theme. It provides four design choices, a photo gallery with zoom, quantities, a device-local shopping bag, FAQ, and responsive layouts. It does not accept orders, charge payments, reserve stock, send messages, or fulfill products.
 
 Run locally: `python3 -m http.server 4173 --directory dist`, then visit http://127.0.0.1:4173.
 
@@ -10,7 +10,7 @@ Run locally: `python3 -m http.server 4173 --directory dist`, then visit http://1
 
 - PEAK RIOT is a proposed name; brand/domain availability has not been researched.
 - $24.99 USD is a placeholder retail price, not a margin or profitability recommendation.
-- Four mask photos in `dist/assets/` are copied from the user-provided reference for this private visual preview. Commercial reuse rights and product authenticity are unverified. Replace with licensed supplier or original photos before a public launch.
+- Four mask photos in `dist/assets/` are copied from the user-provided reference as visual references in this design demo. Commercial reuse rights and product authenticity are unverified. Replace with licensed supplier or original photos before launching sales.
 - Product photos source: slopepunk.com/cdn/shop/files/; filenames begin `hf_20260928_204501_64e2cc1e`, `hf_20260928_204502_3fcc9bd4`, `hf_20260928_204501_4c3e31d0`, and `hf_20260928_204501_d76a72eb`.
 - No customer ratings, discount history, stock scarcity, delivery promises, or supplier specifications have been fabricated.
 
@@ -22,3 +22,9 @@ Run locally: `python3 -m http.server 4173 --directory dist`, then visit http://1
 4. Add approved shipping, return, privacy, and contact information; place a test order through fulfillment before opening public checkout.
 
 No customer data is stored server-side. The preview bag uses `localStorage` only. Google Fonts serves the typography. Page-defined WebMCP tools mirror design selection and the preview bag only.
+
+## Public design preview
+
+GitHub Pages publishes `dist/` through `.github/workflows/pages.yml` when changes are pushed to `main`. The repository's Pages source is GitHub Actions. All asset paths are relative so the site works under the `/peak-riot/` project path.
+
+GitHub Pages is used for this non-selling design demo only. Hosting a functioning ecommerce storefront requires a suitable commerce provider; see [GitHub Pages usage limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
