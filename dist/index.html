@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PEAK RIOT — A little less serious. A lot more you.</title>
+  <meta name="description" content="Meet the PEAK RIOT ski mask collection. Four expressive designs for your next mountain adventure.">
+  <meta name="theme-color" content="#d7ff3f">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d7ff3f'/%3E%3Cpath d='M5 24 15 7l5 9 3-5 5 13H5Zm8-5h7l-4-7Z' fill='%2317191b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to the masks</a>
+  <div class="announcement"><span>A LITTLE LESS SERIOUS. A LOT MORE YOU.</span><span class="preview-label">PRE-LAUNCH PREVIEW · ORDERS NOT OPEN</span></div>
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="Peak Riot home">PEAK RIOT<span>✳</span></a>
+    <nav aria-label="Main navigation"><a class="active" href="#shop">The masks</a><a href="#lineup">Pick your personality</a><a href="#questions">Good to know</a></nav>
+    <button class="bag-trigger" id="open-bag" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Zm4 0V5a3 3 0 0 1 6 0v2"/></svg><span>Bag</span><span id="bag-count">0</span></button>
+  </header>
+  <main>
+    <section class="product-section section-wrap" id="shop" aria-labelledby="product-title">
+      <div class="gallery">
+        <div class="gallery-stage">
+          <span class="gallery-tag">THE PERSONALITY COLLECTION</span>
+          <button class="main-image-button" id="zoom-image" aria-label="Enlarge product photo"><img id="main-image" src="assets/menace.jpg" alt="Menace yellow ski mask design" width="1000" height="1000" fetchpriority="high"></button>
+          <div class="image-caption"><span id="image-caption">01 / MENACE</span><span>+ TAKE A CLOSER LOOK</span></div>
+        </div>
+        <div class="thumbnails" aria-label="Product gallery">
+          <button class="selected" data-gallery="menace" aria-label="View Menace photo" aria-pressed="true"><img src="assets/menace.jpg" alt="Menace" width="140" height="140"></button>
+          <button data-gallery="big-grin" aria-label="View Big Grin photo" aria-pressed="false"><img src="assets/big-grin.jpg" alt="Big Grin" width="140" height="140"></button>
+          <button data-gallery="chomp" aria-label="View Chomp photo" aria-pressed="false"><img src="assets/chomp.jpg" alt="Chomp" width="140" height="140"></button>
+          <button data-gallery="tongue-out" aria-label="View Tongue Out photo" aria-pressed="false"><img src="assets/tongue-out.jpg" alt="Tongue Out" width="140" height="140"></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="eyebrow"><span class="small-cross">✳</span> COLD DAYS. BIG PERSONALITY.</div>
+        <h1 id="product-title">SERIOUS SNOW.<br><span>UNSERIOUS FACE.</span></h1>
+        <p class="intro">Meet your mountain alter ego. A statement ski mask with a face that does all the talking.</p>
+        <div class="price-line"><strong>$24.99 <span>USD</span></strong><span class="small-badge">ONE MASK. ALL THE ATTITUDE.</span></div>
+        <div class="divider"></div>
+        <fieldset class="design-picker"><legend>01 — PICK YOUR PERSONALITY <span id="selected-name">Menace</span></legend>
+          <div class="design-options">
+            <label><input type="radio" name="design" value="menace" checked><span>Menace</span></label>
+            <label><input type="radio" name="design" value="big-grin"><span>Big Grin</span></label>
+            <label><input type="radio" name="design" value="chomp"><span>Chomp</span></label>
+            <label><input type="radio" name="design" value="tongue-out"><span>Tongue Out</span></label>
+          </div>
+        </fieldset>
+        <div class="quantity-label">02 — HOW MANY?</div>
+        <div class="purchase-row"><div class="quantity"><button id="decrease" aria-label="Decrease quantity" disabled>−</button><output id="quantity" aria-live="polite">1</output><button id="increase" aria-label="Increase quantity">+</button></div><button class="primary add-button" id="add-to-bag">ADD TO BAG <span id="add-price">$24.99</span></button></div>
+        <p id="action-error" class="action-error" role="alert" hidden></p>
+        <p class="purchase-note">Preview price. Checkout will open at launch.</p>
+        <div class="product-points"><span><b>4</b> standout designs</span><span><b>✳</b> one signature look</span></div>
+        <details class="product-detail"><summary>The details <span>+</span></summary><p>A full-face balaclava silhouette with bold character artwork. Choose from Menace, Big Grin, Chomp and Tongue Out. Goggles and helmet are not included.</p></details>
+        <details class="product-detail"><summary>Fit & care <span>+</span></summary><p>Measurements, fabric composition and care instructions will be confirmed with the supplier before orders open.</p></details>
+        <details class="product-detail"><summary>Delivery & returns <span>+</span></summary><p>Delivery destinations, shipping costs and return terms will be published before launch. No orders or payments are being accepted in this preview.</p></details>
+      </div>
+    </section>
+    <div class="statement-strip" aria-hidden="true"><span>LESS BLENDING IN.</span><span class="asterisk">✳</span><span>MORE STANDING OUT.</span><span class="asterisk">✳</span><span>PEAK RIOT.</span></div>
+    <section class="lineup section-wrap" id="lineup" aria-labelledby="lineup-title"><div class="section-heading"><div><div class="eyebrow">SAME MOUNTAIN. DIFFERENT ENERGY.</div><h2 id="lineup-title">WHO'S YOUR<br>ALTER EGO?</h2></div><p>Four faces. Zero wallflowers.<br>Find the one that feels like you.</p></div><div class="lineup-grid" id="lineup-grid"></div></section>
+    <section class="questions section-wrap" id="questions" aria-labelledby="faq-title"><div><div class="eyebrow">BEFORE YOU DROP IN</div><h2 id="faq-title">GOOD TO<br>KNOW.</h2><p>A few details before your next adventure.</p></div><div class="faq-list"><details><summary>Can I order a mask now?<span>+</span></summary><p>Not just yet. Explore the designs and try the bag in this pre-launch preview. Orders and payments will open after our store launch.</p></details><details><summary>Which design should I choose?<span>+</span></summary><p>Go with your mood: Menace for a mischievous look, Big Grin for good vibes, Chomp for a little bite, or Tongue Out for pure fun. Tap a design to view it up close.</p></details><details><summary>Are goggles included?<span>+</span></summary><p>No. The listed product is the mask only. Goggles, helmets and other accessories pictured are for styling.</p></details><details><summary>Where will you ship?<span>+</span></summary><p>We're preparing the store for an international audience. Available destinations and delivery estimates will be confirmed before checkout opens.</p></details></div></section>
+  </main>
+  <footer><div class="footer-top section-wrap"><div><a class="wordmark" href="#">PEAK RIOT<span>✳</span></a><p>Bring a little chaos to the cold.</p></div><div><a href="#shop">Shop the masks</a><a href="#questions">Good to know</a><button id="privacy-button">Privacy</button></div></div><div class="footer-bottom section-wrap"><span>© 2026 PEAK RIOT</span><span>ENGLISH / USD $</span><span>PRE-LAUNCH COLLECTION</span></div></footer>
+  <dialog id="bag-dialog" class="bag-dialog" aria-labelledby="bag-title"><div class="dialog-heading"><h2 id="bag-title">YOUR BAG<span id="dialog-count">0</span></h2><button class="icon-button close-dialog" aria-label="Close bag">×</button></div><div id="bag-items"></div><div id="bag-summary"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0.00 USD</strong></div><p>Shipping and taxes are not yet calculated.</p><div class="checkout-note"><strong>Good things are coming.</strong><span>Checkout opens at launch. This preview doesn't place orders or take payments.</span></div><button class="primary close-dialog continue-button">KEEP EXPLORING</button></div></dialog>
+  <dialog id="image-dialog" class="image-dialog" aria-label="Enlarged product image"><button class="icon-button close-dialog" aria-label="Close image">×</button><img id="enlarged-image" src="assets/menace.jpg" alt="Menace ski mask enlarged" width="1000" height="1000"></dialog>
+  <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-heading"><h2 id="privacy-title">Privacy in this preview</h2><button class="icon-button close-dialog" aria-label="Close privacy information">×</button></div><p>This storefront does not collect customer contact details or payment information. Your bag is saved only in this browser. Use “Clear bag” to remove it.</p><p>Site hosting may process connection and sign-in data under its own policies. Fonts are loaded from Google Fonts. Store policies will be published before checkout opens.</p></dialog>
+  <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
